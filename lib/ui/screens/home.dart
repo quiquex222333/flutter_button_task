@@ -1,3 +1,4 @@
+import 'package:button_task/ui/widgets/body.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -7,10 +8,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Buttons task"),
+        title: const Text("Buttons task", style: TextStyle(color: Colors.white),),
         backgroundColor: Colors.blue,
       ),
-      body: const Text("here"),
+      body: const Body(),
     );
   }
 }
